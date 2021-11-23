@@ -1,0 +1,28 @@
+/*Selectores de etiqueta*/
+h1 {
+    color:aquamarine;
+}
+
+/*Selectores de clase*/
+.enlaces a{
+    text-decoration: none;
+    color: #15a8a1; 
+    margin-top: 50px;   
+}
+
+/*Selectores de identificadores*/
+#primer_enlace{
+    text-decoration: none;
+    background-color: #0e8379;
+    color:rgba(255, 255, 255, 0.849);
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 1px #0e8379 solid;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#primer_enlace:hover{
+    background-color: #19b6a9;
+}
