@@ -1,16 +1,83 @@
 /*Selectores de etiqueta*/
+
 h1 {
-    color:aquamarine;
+    color:rgb(33, 93, 73);
 }
 
+input[type=text]{
+    display: inline-block;
+    width: 30%;
+    padding: 5px 8px;
+    border: 0px;
+    background-color: lightgray;
+    border-radius: 5px;
+    box-shadow: 2px 2px #888888;
+}
+
+
+table, th , td{
+    border: 1px solid black;
+  }
+
 /*Selectores de clase*/
+
+.div_test{
+    padding: 10px;
+    background-color: rgb(185, 209, 206);
+    width: 20%;
+    height: 40px;
+    display: inline;
+}
+
+.div_papa_test{
+    display: inline;
+    position: fixed;
+    top:0px;
+    left: 20%;
+}
+
 .enlaces a{
     text-decoration: none;
     color: #15a8a1; 
     margin-top: 50px;   
 }
 
+
+.papa_fondo_color{
+    background-color: #3c90df;
+    height: 40%;
+    width: 40%;
+    border-radius: 5px;
+}
+
+
+.fondo_color{
+    background-color: #a284bb;
+    height: 20%;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.fondo_color:hover{
+    background-color: #986bbd;
+    height: 120px;
+    width: 120px;
+}
+
 /*Selectores de identificadores*/
+
+#imagen_gato{
+    width: 150px;
+    height: 100px;
+    margin-top: 50px;
+    opacity: 0.5;
+}
+
+#imagen_gato:hover{
+    opacity: 0.8;
+}
+
+
 #primer_enlace{
     text-decoration: none;
     background-color: #0e8379;
@@ -25,4 +92,21 @@ h1 {
 
 #primer_enlace:hover{
     background-color: #19b6a9;
+}
+
+#tabla_prueba{
+    margin-top: 50px;
+}
+
+#tabla_prueba table{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#tabla_prueba th{
+    background-color: #19b6a9;
+    color: aliceblue;
 }
