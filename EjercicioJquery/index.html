@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JqueryExample</title>
+    <style>
+        #div_prueba{
+            background: rgb(133, 198, 209);
+        }
+    </style>
+</head>
+<body>
+    <div id="div_prueba">
+        <p>Esto es un div de pruebas</p>
+    </div>
+    <button id="boton">clic</button>
+
+    <!-- JS Frameworks Imports -->
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#boton").click(
+            function() {
+                $.get( "https://www.datos.gov.co/resource/q5ga-uik8.json", function( data ) {
+                    var razon  = data[0]["razon_social"];
+                    $('#div_prueba').append(razon);
+                });
+                
+        });
+
+        
+    </script>
+</body>
+</html>

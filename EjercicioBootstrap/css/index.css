@@ -1,0 +1,11 @@
+#acordeon{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: justify;
+}
+
+.img_carrusel{
+    width: 50%;
+    height: 400px;
+}

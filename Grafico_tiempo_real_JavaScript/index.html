@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GraficoTiempoReal</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js"></script>
+	<style type="text/css">
+		#contenedor_grafico{
+			height: 500px;
+			width: 50%;
+			margin-left:25%;
+			margin-top:100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="contenedor_grafico">
+	  <canvas id="myChart"></canvas>
+	</div>
+
+	<script type="text/javascript">
+		const labels = [
+		  'January',
+		  'February',
+		  'March',
+		  'April',
+		  'May',
+		  'June',
+		];
+		const data = {
+		  labels: labels,
+		  datasets: [{
+		    label: 'Datos',
+		    backgroundColor: 'rgb(255, 99, 132)',
+		    borderColor: 'rgb(255, 99, 132)',
+		    data: [0, 10, 5, 2, 20, 30, 45],
+		  }]
+		};
+
+		const config = {
+		  type: 'line',
+		  data: data,
+		};
+
+		var myChart = new Chart(
+		    document.getElementById('myChart'),
+		    config
+		 );
+	</script>
+</body>
+</html>
